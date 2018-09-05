@@ -54,8 +54,13 @@ def user_input():
     number = int(input('Enter a number, 1 = rock, 2 = paper and 3 = scissors: '))
     print(' ')
     while number < 1 or number > 3:
-        print('Please enter a valid number')
-        number = int(input('Enter a number, 1 = rock, 2 = paper and 3 = scissors : '))
+        try:
+            print('Please enter a valid number')
+            number = int(input('Enter a number, 1 = rock, 2 = paper and 3 = scissors : '))
+            print(' ')
+        except:
+            print('Bad input')
+            print(' ')
     return number
 
 def main():
