@@ -46,8 +46,6 @@ def decider (num, comp):
         return 'The computer loses, paper loses to scissors'
     else:
         return 'Good game'
-
-
 # Get the player's input.
 def user_input():
     # Enter a number.
